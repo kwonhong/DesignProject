@@ -1,7 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c49d838-999c-4b1b-b7d6-ab3d0dcb11e1" name="Default" comment="" />
+    <list default="true" id="3a2dd775-9715-409d-aa3f-f0b5352fac0c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/opencv-320.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/opencv_320.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/yadrone/designProject/Utility.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/CCFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/CCFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/CCFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/CCPropertyManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/ICCPlugin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/YADroneControlCenter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/img/desktop.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/altitude/AltitudeChart.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/altitude/AltitudeChartPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/altitude/AltitudeChartPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/attitudechart/AttitudeChart.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/attitudechart/AttitudeChartPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/attitudechart/AttitudeChartPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/battery/BatteryPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/battery/BatteryPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/configuration/ConfigurationPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/configuration/ConfigurationPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/configuration/ConfigurationPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/configuration/ConfigurationPanel$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/configuration/ConfigurationPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/configuration/ConfigurationPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/connection/ConnectionState$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/connection/ConnectionState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/connection/dot_green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/connection/dot_red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/console/ConsolePanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/console/ConsolePanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/console/ConsolePanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/console/ConsolePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/KeyboardCommandManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/KeyboardCommandManagerAlternative.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/KeyboardLayoutPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/KeyboardLayoutPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/KeyboardLayoutPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/KeyboardLayoutPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/keyboard_control.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/keyboard/keyboard_control_alternative.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/pluginmanager/PluginManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/pluginmanager/PluginManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/qrcode/QRCodeScannerPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/qrcode/QRCodeScannerPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/qrcode/QRCodeScannerPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/qrcode/generator/QRCodeGeneratorPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/qrcode/generator/QRCodeGeneratorPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/qrcode/generator/QRCodeGeneratorPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/qrcode/generator/QRCodeGeneratorPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/speed/SpeedPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/speed/SpeedPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/speed/SpeedPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/speed/SpeedPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/state/StatePanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/state/StatePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/statistics/StatisticsPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoCanvas$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoCanvas$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoCanvas$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoCanvas$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoCanvas.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$5$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$5$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$5$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/VideoPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/controlcenter/plugins/video/hourglass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/PaperChaseGUI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/QRCodeScanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/TagListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/controller/PaperChaseAbstractController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/controller/PaperChaseAutoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/controller/PaperChaseKeyboardController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/paperchase/controller/PaperChaseKeyboardController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialAttitudeListener$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialAttitudeListener$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialAttitudeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialCommander.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialMain$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialVideoListener$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialVideoListener$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialVideoListener$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialVideoListener$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/apps/tutorial/TutorialVideoListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/ARDrone$ISpeedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/ARDrone.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/IARDrone.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/ATCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/CalibrationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/CommandManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/CommandManager$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/CommandManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/CommandQueue$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/CommandQueue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/ConfigureCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/ConfigureIdsCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/ControlCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/ControlMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/DetectionType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/Device.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/DroneCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/EmergencyCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/EnemyColor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/FileFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/FlatTrimCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/FlightAnimation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/FlightAnimationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/FlyingMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/FreezeCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/GainsCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/GroundStripeColor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/H264.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/HoverCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/JPEGFileFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/KeepAliveCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/LEDAnimation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/LEDAnimationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/LandCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/Location.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/ManualTrimCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/MiscCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/MoveCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/NavDataFileFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/PCMDCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/PCMDMagCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/PMODECommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/PlayAnimationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/Priority.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/QuitCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/RawCaptureCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/RefCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/ResetControlAckCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/TakeOffCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/UltrasoundFrequency.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/UserBox.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/UserboxFileFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/VideoBitRateMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/VideoChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/VideoChannelCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/VideoCodec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/VisionOptionCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/VisionParametersCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/VisionTagType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/command/WifiMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/configuration/ConfigurationListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/configuration/ConfigurationManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/configuration/ConfigurationManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/exception/ARDroneException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/exception/CommandException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/exception/ConfigurationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/exception/IExceptionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/exception/NavDataException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/exception/VideoException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/manager/AbstractManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/manager/AbstractTCPManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/AcceleroListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/AcceleroPhysData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/AcceleroRawData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/AdcFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/AdcListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/Altitude.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/AltitudeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/AttitudeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/BatteryListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/CadType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/ControlAlgorithm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/ControlState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/ControlStateListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/CounterListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/Counters.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/DroneState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/GyroListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/GyroPhysData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/GyroRawData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/HDVideoState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/HDVideoStreamData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/KalmanPressureData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/MagnetoData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/MagnetoListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/NavData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/NavDataException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/NavDataManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/PWMData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/PWMlistener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/Pressure.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/PressureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/ReferencesData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/ReferencesListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/StateListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/Temperature.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/TemperatureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/TimeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/TrackerData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/TrimsListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/UltrasoundData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/UltrasoundListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/VelocityListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/VideoListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/VideoStreamData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/VisionData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/VisionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/VisionPerformance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/VisionTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/WatchdogListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/WifiListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/WindEstimationData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/WindListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/navdata/Zimmu3000Listener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/utils/ARDroneUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/BufferedVideoImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/ImageDataException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/ImageListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/ImageSlice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/MacroBlock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/PictureFormats.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/ReadRawFileImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/VideoDecoder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/VideoImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/VideoManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/uint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/base/video/xuggler/XugglerDecoder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/designProject/Controller$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/designProject/Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/designProject/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesignProject/de/yadrone/designProject/sample.fxml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesignProject.iml" afterPath="$PROJECT_DIR$/DesignProject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/yadrone/designProject/Controller.java" afterPath="$PROJECT_DIR$/src/de/yadrone/designProject/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/yadrone/designProject/Main.java" afterPath="$PROJECT_DIR$/src/de/yadrone/designProject/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/yadrone/designProject/sample.fxml" afterPath="$PROJECT_DIR$/src/de/yadrone/designProject/sample.fxml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,41 +262,145 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="426">
+              <caret line="244" column="35" lean-forward="false" selection-start-line="244" selection-start-column="35" selection-end-line="244" selection-end-column="35" />
               <folding>
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3268#3269#0" expanded="true" />
+                <element signature="e#3339#3340#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TutorialCommander.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/yadrone/apps/tutorial/TutorialCommander.java">
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="573">
+              <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DesignProject.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DesignProject.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/System.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="1120" column="23" lean-forward="false" selection-start-line="1120" selection-start-column="23" selection-end-line="1120" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#53706#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#11566#11567#0" expanded="false" />
+                <element signature="e#11597#11598#0" expanded="false" />
+                <element signature="e#26565#26566#0" expanded="false" />
+                <element signature="e#26601#26602#0" expanded="false" />
+                <element signature="e#40171#40172#0" expanded="false" />
+                <element signature="e#40220#40221#0" expanded="false" />
+                <element signature="e#40917#40918#0" expanded="false" />
+                <element signature="e#40958#40959#0" expanded="false" />
+                <element signature="e#41780#41781#0" expanded="false" />
+                <element signature="e#41834#41835#0" expanded="false" />
+                <element signature="e#43077#43078#0" expanded="false" />
+                <element signature="e#43127#43128#0" expanded="false" />
+                <element signature="e#44970#44971#0" expanded="false" />
+                <element signature="e#45051#45052#0" expanded="false" />
+                <element signature="e#51559#51560#0" expanded="false" />
+                <element signature="e#51621#51622#0" expanded="false" />
+                <element signature="e#51882#51883#0" expanded="false" />
+                <element signature="e#51946#51947#0" expanded="false" />
+                <element signature="e#52191#52192#0" expanded="false" />
+                <element signature="e#52255#52256#0" expanded="false" />
+                <element signature="e#52326#52327#0" expanded="false" />
+                <element signature="e#52394#52395#0" expanded="false" />
+                <element signature="e#52670#52671#0" expanded="false" />
+                <element signature="e#52739#52740#0" expanded="false" />
+                <element signature="e#52802#52803#0" expanded="false" />
+                <element signature="e#52848#52849#0" expanded="false" />
+                <element signature="e#53097#53098#0" expanded="false" />
+                <element signature="e#53158#53159#0" expanded="false" />
+                <element signature="e#53238#53239#0" expanded="false" />
+                <element signature="e#53302#53303#0" expanded="false" />
+                <element signature="e#53360#53361#0" expanded="false" />
+                <element signature="e#53422#53423#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/sample.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="102" column="44" lean-forward="false" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Button.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Button.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>connectbutton</find>
+      <find>connect</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,10 +410,19 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/de/yadrone/designProject/Main.java" />
+        <option value="$PROJECT_DIR$/src/de/yadrone/designProject/Utility.java" />
+        <option value="$PROJECT_DIR$/src/de/yadrone/designProject/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/de/yadrone/designProject/Controller.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="731" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -79,7 +439,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -133,58 +492,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesignProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesignProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yadrone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesignProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesignProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yadrone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FullScreen" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/opencv" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -195,9 +523,9 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="de.yadrone.designProject.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=/usr/local/opt/opencv3/share/OpenCV/java/" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -215,11 +543,11 @@
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -370,47 +698,49 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1c49d838-999c-4b1b-b7d6-ab3d0dcb11e1" name="Default" comment="" />
-      <created>1485809957409</created>
+      <changelist id="3a2dd775-9715-409d-aa3f-f0b5352fac0c" name="Default" comment="" />
+      <created>1486579250929</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1485809957409</updated>
+      <updated>1486579250929</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="731" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25282714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -420,30 +750,287 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="45">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3268#3269#0" expanded="true" />
+            <element signature="e#3339#3340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/yadrone/apps/tutorial/TutorialCommander.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DesignProject.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15990">
+          <caret line="1120" column="23" lean-forward="false" selection-start-line="1120" selection-start-column="23" selection-end-line="1120" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#53706#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#11566#11567#0" expanded="false" />
+            <element signature="e#11597#11598#0" expanded="false" />
+            <element signature="e#26565#26566#0" expanded="false" />
+            <element signature="e#26601#26602#0" expanded="false" />
+            <element signature="e#40171#40172#0" expanded="false" />
+            <element signature="e#40220#40221#0" expanded="false" />
+            <element signature="e#40917#40918#0" expanded="false" />
+            <element signature="e#40958#40959#0" expanded="false" />
+            <element signature="e#41780#41781#0" expanded="false" />
+            <element signature="e#41834#41835#0" expanded="false" />
+            <element signature="e#43077#43078#0" expanded="false" />
+            <element signature="e#43127#43128#0" expanded="false" />
+            <element signature="e#44970#44971#0" expanded="false" />
+            <element signature="e#45051#45052#0" expanded="false" />
+            <element signature="e#51559#51560#0" expanded="false" />
+            <element signature="e#51621#51622#0" expanded="false" />
+            <element signature="e#51882#51883#0" expanded="false" />
+            <element signature="e#51946#51947#0" expanded="false" />
+            <element signature="e#52191#52192#0" expanded="false" />
+            <element signature="e#52255#52256#0" expanded="false" />
+            <element signature="e#52326#52327#0" expanded="false" />
+            <element signature="e#52394#52395#0" expanded="false" />
+            <element signature="e#52670#52671#0" expanded="false" />
+            <element signature="e#52739#52740#0" expanded="false" />
+            <element signature="e#52802#52803#0" expanded="false" />
+            <element signature="e#52848#52849#0" expanded="false" />
+            <element signature="e#53097#53098#0" expanded="false" />
+            <element signature="e#53158#53159#0" expanded="false" />
+            <element signature="e#53238#53239#0" expanded="false" />
+            <element signature="e#53302#53303#0" expanded="false" />
+            <element signature="e#53360#53361#0" expanded="false" />
+            <element signature="e#53422#53423#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="98" lean-forward="false" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/opencv-320.jar!/org/opencv/core/Core.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesignProject.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="1120" column="23" lean-forward="false" selection-start-line="1120" selection-start-column="23" selection-end-line="1120" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#53706#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#11566#11567#0" expanded="false" />
+            <element signature="e#11597#11598#0" expanded="false" />
+            <element signature="e#26565#26566#0" expanded="false" />
+            <element signature="e#26601#26602#0" expanded="false" />
+            <element signature="e#40171#40172#0" expanded="false" />
+            <element signature="e#40220#40221#0" expanded="false" />
+            <element signature="e#40917#40918#0" expanded="false" />
+            <element signature="e#40958#40959#0" expanded="false" />
+            <element signature="e#41780#41781#0" expanded="false" />
+            <element signature="e#41834#41835#0" expanded="false" />
+            <element signature="e#43077#43078#0" expanded="false" />
+            <element signature="e#43127#43128#0" expanded="false" />
+            <element signature="e#44970#44971#0" expanded="false" />
+            <element signature="e#45051#45052#0" expanded="false" />
+            <element signature="e#51559#51560#0" expanded="false" />
+            <element signature="e#51621#51622#0" expanded="false" />
+            <element signature="e#51882#51883#0" expanded="false" />
+            <element signature="e#51946#51947#0" expanded="false" />
+            <element signature="e#52191#52192#0" expanded="false" />
+            <element signature="e#52255#52256#0" expanded="false" />
+            <element signature="e#52326#52327#0" expanded="false" />
+            <element signature="e#52394#52395#0" expanded="false" />
+            <element signature="e#52670#52671#0" expanded="false" />
+            <element signature="e#52739#52740#0" expanded="false" />
+            <element signature="e#52802#52803#0" expanded="false" />
+            <element signature="e#52848#52849#0" expanded="false" />
+            <element signature="e#53097#53098#0" expanded="false" />
+            <element signature="e#53158#53159#0" expanded="false" />
+            <element signature="e#53238#53239#0" expanded="false" />
+            <element signature="e#53302#53303#0" expanded="false" />
+            <element signature="e#53360#53361#0" expanded="false" />
+            <element signature="e#53422#53423#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="102" column="44" lean-forward="false" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="244" column="35" lean-forward="false" selection-start-line="244" selection-start-column="35" selection-end-line="244" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3268#3269#0" expanded="true" />
+            <element signature="e#3339#3340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/yadrone/designProject/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DesignProject</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>opencv-320</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

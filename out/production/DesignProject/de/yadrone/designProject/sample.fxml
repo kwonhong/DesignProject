@@ -1,28 +1,110 @@
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.ImageView?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
-
 <?import javafx.scene.layout.HBox?>
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="de.yadrone.designProject.Controller">
-    <center>
-        <HBox alignment="CENTER" spacing="5">
-            <VBox alignment="CENTER" spacing="5">
-                <Label text="Drone Video Stream"/>
-                <ImageView fx:id="droneVideoStreamImageView"/>
-            </VBox>
-        </HBox>
-    </center>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-pref-width: 1000; -fx-pref-height: 600;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.yadrone.designProject.Controller">
+    <right>
+        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-pref-width: 700; -fx-pref-height: 500;" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Video Stream Title Label -->
+                <Label layoutX="15.0" layoutY="5.0" text="Dynamic Object Recognition Analysis">
+                    <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                    </font>
+                </Label>
+
+                <!-- RGB Frame Label & Image View-->
+                <Label layoutX="15.0" layoutY="30.0" text="RGB Frame" underline="true">
+                    <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="originalFrameImageView" fitHeight="70.0" fitWidth="100.0" layoutX="15.0" layoutY="50.0" pickOnBounds="true" />
+
+                <!-- HSV Frame Label & Image View-->
+                <Label layoutX="15.0" layoutY="126.0" text="HSV Frame" underline="true">
+                    <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="hsvFrameImageView" fitHeight="70.0" fitWidth="100.0" layoutX="15.0" layoutY="146.0" pickOnBounds="true" />
+
+                <!-- HSV Filtered Frame Label & Image View-->
+                <Label layoutX="15.0" layoutY="220.0" text="HSV Filtered Frame" underline="true">
+                    <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="filteredFrameImageView" fitHeight="70.0" fitWidth="100.0" layoutX="15.0" layoutY="240.0" pickOnBounds="true" />
+
+                <!-- Detected Object Screen-->
+                <Label layoutX="150.0" layoutY="30.0" text="After Morphological Operation" underline="true">
+                    <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="morphFrameImageView" fitHeight="260.0" fitWidth="500.0" layoutX="150.0" layoutY="50.0" pickOnBounds="true" />
 
 
-    <bottom>
-        <VBox alignment="CENTER" spacing="15">
-            <Button fx:id="connectDrone" alignment="center" text="Connect Drone"
-                    onAction="#connectDrone"/>
-            <Button fx:id="startVideoStream" alignment="center" text="Start Video Stream"
-                    onAction="#startVideoStream"/>
+                <Label layoutX="19.0" layoutY="356.0" text="Relative Location Data" underline="true">
+                    <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="relativePositionTxtArea" layoutX="20.0" layoutY="376.0" prefHeight="113.0" prefWidth="636.0" />
+            </children>
+        </Pane>
+    </right>
+
+    <left>
+        <VBox alignment="BASELINE_LEFT" spacing="10" style="-fx-background-color: #696969; -fx-pref-width: 300;">
+            <padding>
+                <Insets left="10" right="10" />
+            </padding>
+            <Label text="HSV Range Control" textFill="WHITE">
+                <font>
+                    <Font name="Times New Roman Bold" size="20.0" />
+                </font>
+            </Label>
+            <Label text="Hue Start" textFill="WHITE" />
+            <Slider fx:id="hueStartSlider" blockIncrement="1" max="180" min="0" value="20" />
+            <Label text="Hue Stop" textFill="WHITE" />
+            <Slider fx:id="hueStopSlider" blockIncrement="1" max="180" min="0" value="50" />
+            <Label text="Saturation Start" textFill="WHITE" />
+            <Slider fx:id="saturationStartSlider" blockIncrement="1" max="255" min="0" value="60" />
+            <Label text="Saturation Stop" textFill="WHITE" />
+            <Slider fx:id="saturationStopSlider" blockIncrement="1" max="255" min="0" value="200" />
+            <Label text="Value Start" textFill="WHITE" />
+            <Slider fx:id="valueStartSlider" blockIncrement="1" max="255" min="0" value="50" />
+            <Label text="Value Stop" textFill="WHITE" />
+            <Slider fx:id="valueStopSlider" blockIncrement="1" max="255" min="0" value="255" />
+            <HBox style="-fx-spacing: 5;">
+                <Button fx:id="redButton" alignment="center" onAction="#setRedHsvRange" text="RED" />
+                <Button fx:id="greenButton" alignment="center" onAction="#setGreenHsvRange" text="GREEN" />
+            </HBox>
+
+            <Label text="Basic Commands" textFill="WHITE">
+                <font>
+                    <Font name="Times New Roman Bold" size="20.0" />
+                </font>
+            </Label>
+
+            <HBox alignment="BASELINE_LEFT" spacing="10">
+                <Button fx:id="connectButton" alignment="center" onAction="#connectDrone" text="Connect Drone" />
+                <Button fx:id="videoButton" alignment="center" disable="true" onAction="#startCamera" text="Start camera" />
+            </HBox>
         </VBox>
-    </bottom>
+
+
+    </left>
 </BorderPane>

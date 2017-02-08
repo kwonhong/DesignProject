@@ -10,5 +10,6 @@
     <orderEntry type="library" name="reflections" level="project" />
     <orderEntry type="library" name="zxing" level="project" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="opencv-320" level="project" />
   </component>
 </module>
