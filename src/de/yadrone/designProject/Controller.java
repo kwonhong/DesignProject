@@ -14,7 +14,6 @@ import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.videoio.VideoCapture;
 
-import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +30,23 @@ public class Controller {
     private static final float MIN_CONTOUR_AREA = 2000;
     private static final int DILATION_SIZE = 16;
     private static final int EROSION_SIZE = 6;
-
+    
+    // Buttons
+    @FXML private Button connectDroneButton;
+    @FXML private Button startCameraButton;
+    @FXML private Button takeOffButton;
+    @FXML private Button landButton;
+    @FXML private Button increaseAltitudeButton;
+    @FXML private Button decreaseAltitudeButton;
+    @FXML private Button forwardButton;
+    @FXML private Button backButton;
+    @FXML private Button rotateLeftButton;
+    @FXML private Button rotateRightButton;
+    @FXML private Button emergencyCutOffButton;
+    
+    @FXML private Button redButton;
+    @FXML private Button greenButton;
+    
     // Sliders to set HSV min/max values.
     @FXML private Slider hueStartSlider;
     @FXML private Slider hueStopSlider;
@@ -46,16 +61,13 @@ public class Controller {
     @FXML private ImageView filteredFrameImageView;
     @FXML private ImageView morphFrameImageView;
 
-    // Buttons
-    @FXML private Button videoButton;
-    @FXML private Button connectButton;
-
     // TextArea to display relative position information
     @FXML private TextArea relativePositionTxtArea;
 
     private IARDrone drone;
 
-    public Controller() {}
+	public Controller() {
+	}
 
     @FXML
     private void connectDrone() {
@@ -69,10 +81,12 @@ public class Controller {
             // all managers (i.e. Command-, Configuration, NavData- and VideoManager)
             // will begin their work
             drone.start();
-
-            videoButton.setDisable(false);
-            connectButton.setDisable(true);
-
+            
+            // enable the take-off and camera buttons
+            connectDroneButton.setDisable(true);
+            startCameraButton.setDisable(false);
+            takeOffButton.setDisable(false);
+            
         } catch (Exception exc) {
             System.err.println("Failed to connect to the drone...");
             exc.printStackTrace();
@@ -81,12 +95,84 @@ public class Controller {
 
     @FXML
     private void startCamera() {
-        startComputerVideoStream();
-
-        // TODO: Change after connection made
-        // startDroneVideoStream();
+        startDroneVideoStream();
+        startCameraButton.setDisable(true);
     }
 
+    @FXML
+	private void takeOff() {
+		drone.takeOff();
+		takeOffButton.setDisable(true);
+		landButton.setDisable(false);
+        increaseAltitudeButton.setDisable(false);
+        decreaseAltitudeButton.setDisable(false);
+        forwardButton.setDisable(false);
+        backButton.setDisable(false);
+        rotateLeftButton.setDisable(false);
+        rotateRightButton.setDisable(false);
+        emergencyCutOffButton.setDisable(false);
+	}
+
+    @FXML
+    private void land() {
+    	drone.landing();
+		takeOffButton.setDisable(false);
+		landButton.setDisable(true);
+        increaseAltitudeButton.setDisable(true);
+        decreaseAltitudeButton.setDisable(true);
+        forwardButton.setDisable(true);
+        backButton.setDisable(true);
+        rotateLeftButton.setDisable(true);
+        rotateRightButton.setDisable(true);
+        emergencyCutOffButton.setDisable(true);
+    }
+    
+    @FXML
+    private void increaseAltitude() {
+    	drone.up();
+    }
+    
+    @FXML
+    private void decreaseAltitude() {
+    	drone.down();
+    }
+    
+    @FXML
+    private void forward() {
+    	drone.forward();
+    }
+    
+    @FXML
+    private void back() {
+    	drone.backward();
+    }
+    
+    @FXML
+    private void rotateLeft() {
+    	drone.spinLeft();
+    }
+    
+    @FXML
+    private void rotateRight() {
+    	drone.spinRight();
+    }
+    
+    @FXML
+    private void emergencyCutOff() {
+    	drone.reset();
+    	
+        takeOffButton.setDisable(false);
+        landButton.setDisable(true);
+        increaseAltitudeButton.setDisable(true);
+        decreaseAltitudeButton.setDisable(true);
+        forwardButton.setDisable(true);
+        backButton.setDisable(true);
+        rotateLeftButton.setDisable(true);
+        rotateRightButton.setDisable(true);
+        emergencyCutOffButton.setDisable(true);
+        
+    }
+    
     private void startDroneVideoStream() {
         // Checking the drone connection before starting the video steaming
         if (drone == null || !drone.getConfigurationManager().isConnected()) {

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -12,99 +18,219 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane style="-fx-pref-width: 1000; -fx-pref-height: 600;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.yadrone.designProject.Controller">
-    <right>
-        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-pref-width: 700; -fx-pref-height: 500;" BorderPane.alignment="CENTER">
-            <children>
-                <!-- Video Stream Title Label -->
-                <Label layoutX="15.0" layoutY="5.0" text="Dynamic Object Recognition Analysis">
-                    <font>
-                        <Font name="Times New Roman Bold" size="20.0" />
-                    </font>
-                </Label>
-
-                <!-- RGB Frame Label & Image View-->
-                <Label layoutX="15.0" layoutY="30.0" text="RGB Frame" underline="true">
-                    <font>
-                        <Font name="Times New Roman Bold" size="13.0" />
-                    </font>
-                </Label>
-                <ImageView fx:id="originalFrameImageView" fitHeight="70.0" fitWidth="100.0" layoutX="15.0" layoutY="50.0" pickOnBounds="true" />
-
-                <!-- HSV Frame Label & Image View-->
-                <Label layoutX="15.0" layoutY="126.0" text="HSV Frame" underline="true">
-                    <font>
-                        <Font name="Times New Roman Bold" size="13.0" />
-                    </font>
-                </Label>
-                <ImageView fx:id="hsvFrameImageView" fitHeight="70.0" fitWidth="100.0" layoutX="15.0" layoutY="146.0" pickOnBounds="true" />
-
-                <!-- HSV Filtered Frame Label & Image View-->
-                <Label layoutX="15.0" layoutY="220.0" text="HSV Filtered Frame" underline="true">
-                    <font>
-                        <Font name="Times New Roman Bold" size="13.0" />
-                    </font>
-                </Label>
-                <ImageView fx:id="filteredFrameImageView" fitHeight="70.0" fitWidth="100.0" layoutX="15.0" layoutY="240.0" pickOnBounds="true" />
-
-                <!-- Detected Object Screen-->
-                <Label layoutX="150.0" layoutY="30.0" text="After Morphological Operation" underline="true">
-                    <font>
-                        <Font name="Times New Roman Bold" size="13.0" />
-                    </font>
-                </Label>
-                <ImageView fx:id="morphFrameImageView" fitHeight="260.0" fitWidth="500.0" layoutX="150.0" layoutY="50.0" pickOnBounds="true" />
-
-
-                <Label layoutX="19.0" layoutY="356.0" text="Relative Location Data" underline="true">
-                    <font>
-                        <Font name="Times New Roman Bold" size="13.0" />
-                    </font>
-                </Label>
-                <TextArea fx:id="relativePositionTxtArea" layoutX="20.0" layoutY="376.0" prefHeight="113.0" prefWidth="636.0" />
-            </children>
-        </Pane>
-    </right>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.yadrone.designProject.Controller">
 
     <left>
-        <VBox alignment="BASELINE_LEFT" spacing="10" style="-fx-background-color: #696969; -fx-pref-width: 300;">
+        <VBox alignment="BASELINE_LEFT" spacing="10" style="-fx-background-color: #616161;">
             <padding>
-                <Insets left="10" right="10" />
+                <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
             </padding>
-            <Label text="HSV Range Control" textFill="WHITE">
-                <font>
-                    <Font name="Times New Roman Bold" size="20.0" />
-                </font>
+           <children>
+            <Label text="Pilot Controls" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
             </Label>
-            <Label text="Hue Start" textFill="WHITE" />
-            <Slider fx:id="hueStartSlider" blockIncrement="1" max="180" min="0" value="20" />
-            <Label text="Hue Stop" textFill="WHITE" />
-            <Slider fx:id="hueStopSlider" blockIncrement="1" max="180" min="0" value="50" />
-            <Label text="Saturation Start" textFill="WHITE" />
-            <Slider fx:id="saturationStartSlider" blockIncrement="1" max="255" min="0" value="60" />
-            <Label text="Saturation Stop" textFill="WHITE" />
-            <Slider fx:id="saturationStopSlider" blockIncrement="1" max="255" min="0" value="200" />
-            <Label text="Value Start" textFill="WHITE" />
-            <Slider fx:id="valueStartSlider" blockIncrement="1" max="255" min="0" value="50" />
-            <Label text="Value Stop" textFill="WHITE" />
-            <Slider fx:id="valueStopSlider" blockIncrement="1" max="255" min="0" value="255" />
-            <HBox style="-fx-spacing: 5;">
-                <Button fx:id="redButton" alignment="center" onAction="#setRedHsvRange" text="RED" />
-                <Button fx:id="greenButton" alignment="center" onAction="#setGreenHsvRange" text="GREEN" />
+            <HBox>
+               <children>
+                      <Button fx:id="connectDroneButton" alignment="center" onAction="#connectDrone" prefWidth="155.0" style="-fx-background-radius: 0;" text="Connect drone">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                      <Button fx:id="startCameraButton" alignment="center" disable="true" onAction="#startCamera" prefWidth="155.0" style="-fx-background-radius: 0;" text="Start camera" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
             </HBox>
-
-            <Label text="Basic Commands" textFill="WHITE">
-                <font>
-                    <Font name="Times New Roman Bold" size="20.0" />
-                </font>
+            <HBox>
+               <children>
+                      <Button fx:id="takeOffButton" alignment="center" disable="true" onAction="#takeOff" prefWidth="155.0" style="-fx-background-radius: 0;" text="Take-off">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                      <Button fx:id="landButton" alignment="center" disable="true" onAction="#land" prefWidth="155.0" style="-fx-background-radius: 0;" text="Land" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="increaseAltitudeButton" disable="true" onAction="#increaseAltitude" prefWidth="110.0" style="-fx-background-radius: 0;" text="Increase altitude">
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="decreaseAltitudeButton" disable="true" onAction="#decreaseAltitude" prefWidth="110.0" style="-fx-background-radius: 0;" text="Decrease altitude" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="forwardButton" disable="true" onAction="#forward" prefWidth="80.0" style="-fx-background-radius: 0;" text="Forward">
+               <VBox.margin>
+                  <Insets left="120.0" top="-10.0" />
+               </VBox.margin>
+            </Button>
+            <HBox>
+               <children>
+                  <Button fx:id="rotateLeftButton" disable="true" onAction="#rotateLeft" prefWidth="80.0" rotate="-10.0" style="-fx-background-radius: 0;" text="Rotate left">
+                     <HBox.margin>
+                        <Insets left="30.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="backButton" disable="true" onAction="#forward" prefWidth="80.0" style="-fx-background-radius: 0;" text="Back">
+                     <HBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="rotateRightButton" disable="true" onAction="#rotateRight" prefWidth="80.0" rotate="10.0" style="-fx-background-radius: 0;" text="Rotate right" />
+               </children>
+            </HBox>
+            <Button fx:id="emergencyCutOffButton" disable="true" onAction="#emergencyCutOff" prefWidth="320.0" style="-fx-background-radius: 0;" text="Emergency cut-off">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <Label layoutX="25.0" layoutY="34.0" text="Object Recognition" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="-10.0" />
+               </VBox.margin>
             </Label>
-
-            <HBox alignment="BASELINE_LEFT" spacing="10">
-                <Button fx:id="connectButton" alignment="center" onAction="#connectDrone" text="Connect Drone" />
-                <Button fx:id="videoButton" alignment="center" disable="true" onAction="#startCamera" text="Start camera" />
-            </HBox>
+               <HBox style="-fx-spacing: 5;">
+                  <children>
+                      <Button fx:id="redButton" alignment="center" onAction="#setRedHsvRange" prefWidth="155.0" style="-fx-background-radius: 0;" text="Red">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                      <Button fx:id="greenButton" alignment="center" onAction="#setGreenHsvRange" prefWidth="155.0" style="-fx-background-radius: 0;" text="Green" />
+                  </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               </HBox>
+               <Label text="Hue Start" textFill="WHITE" />
+               <Slider fx:id="hueStartSlider" blockIncrement="1" max="180" min="0" value="20" />
+               <Label text="Hue Stop" textFill="WHITE" />
+               <Slider fx:id="hueStopSlider" blockIncrement="1" max="180" min="0" value="50" />
+               <Label text="Saturation Start" textFill="WHITE" />
+               <Slider fx:id="saturationStartSlider" blockIncrement="1" max="255" min="0" value="60" />
+               <Label text="Saturation Stop" textFill="WHITE" />
+               <Slider fx:id="saturationStopSlider" blockIncrement="1" max="255" min="0" value="200" />
+               <Label text="Value Start" textFill="WHITE" />
+               <Slider fx:id="valueStartSlider" blockIncrement="1" max="255" min="0" value="50" />
+               <Label text="Value Stop" textFill="WHITE" />
+               <Slider fx:id="valueStopSlider" blockIncrement="1" max="255" min="0" value="255" />
+   
+               <HBox alignment="BASELINE_LEFT" spacing="10" />
+           </children>
         </VBox>
 
 
     </left>
+   <right>
+      <VBox style="-fx-background-color: #F5F5F5;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Dynamic Object Recognition Analysis" textFill="#616161">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="200.0">
+                     <children>
+            
+                                  <!-- RGB Frame Label & Image View-->
+                            <Label text="RGB frame" textFill="#616161">
+                                <font>
+                                    <Font name="Arial" size="18.0" />
+                                </font>
+                            </Label>
+                            <ImageView fx:id="originalFrameImageView" fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" />
+                        <Label text="HSV frame" textFill="#616161">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                            <ImageView fx:id="hsvFrameImageView" fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" />
+                        <Label text="Filtered frame" textFill="#616161">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                            <ImageView fx:id="filteredFrameImageView" fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" />
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+            
+                                  <!-- Detected Object Screen-->
+                            <Label text="After morphological operation" textFill="#616161">
+                                <font>
+                                    <Font name="Arial" size="18.0" />
+                                </font>
+                            </Label>
+                            <ImageView fx:id="morphFrameImageView" fitHeight="340.0" fitWidth="600.0" pickOnBounds="true" />
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+
+      
+                      <Label text="Relative location data" textFill="#616161">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </Label>
+                <TextArea fx:id="relativePositionTxtArea" prefHeight="230.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="25.0" right="15.0" top="15.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
 </BorderPane>
