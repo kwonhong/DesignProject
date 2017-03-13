@@ -18,6 +18,8 @@ import org.opencv.videoio.VideoCapture;
 
 import javax.swing.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
@@ -51,7 +53,7 @@ public class Controller {
     @FXML private Button redButton;
     @FXML private Button greenButton;
 
-    private ImageView imageView;
+    @FXML private ImageView instructionsImg;
     
     // Sliders to set HSV min/max values.
     @FXML private Slider hueStartSlider;
@@ -69,7 +71,26 @@ public class Controller {
 
     // TextArea to display relative position information
     @FXML private TextArea relativePositionTxtArea;
-
+    
+    static Image upImg;
+	static Image downImg;
+	static Image forwardImg;
+	static Image leftImg;
+	static Image rightImg;
+	static Image defaultImg;
+	
+    static {
+		try {
+			upImg = new Image(new File(".\\img\\up.png").toURL().toString());
+			downImg = new Image(new File(".\\img\\down.png").toURL().toString());
+			forwardImg = new Image(new File(".\\img\\forward.png").toURL().toString());
+			leftImg = new Image(new File(".\\img\\left.png").toURL().toString());
+			rightImg = new Image(new File(".\\img\\right.png").toURL().toString());
+			defaultImg = new Image(new File(".\\img\\default.png").toURL().toString());
+		} catch (MalformedURLException e) {
+		}
+    }
+    
     private IARDrone drone;
     private int counter = 0;
 
@@ -103,8 +124,8 @@ public class Controller {
 
     @FXML
     private void startCamera() {
-//        startDroneVideoStream();
-        startComputerVideoStream();
+        startDroneVideoStream();
+//        startComputerVideoStream();
         startCameraButton.setDisable(true);
     }
 
@@ -352,41 +373,31 @@ public class Controller {
         });
     }
 
-    public static final int COORDINATE_ALLOWABLE_OFFSET = 7;
-    public static final int AREA_ALLOWABLE_OFFSET = 10;
-    public void findAutonomousInstruction(double x, double y, double area) {
-//        Image image = new Image(getClass().getResource(
-//                "/images/instructions/default.png").toString(), true);
+	public static final int COORDINATE_ALLOWABLE_OFFSET = 7;
+	public static final int AREA_ALLOWABLE_OFFSET = 10;
 
-        if ( x < 50 - COORDINATE_ALLOWABLE_OFFSET) {
-//            image = new Image(getClass().getResource(
-//                    "/images/instructions/left.png").toString(), true);
-            // rotate left
-        } else if ( x > 50 + COORDINATE_ALLOWABLE_OFFSET) {
-//            image = new Image(getClass().getResource(
-//                    "/images/instructions/right.png").toString(), true);
-            // rotate right
-        } else if ( y < 50 - COORDINATE_ALLOWABLE_OFFSET) {
-//            image = new Image(getClass().getResource(
-//                    "/images/instructions/up.png").toString(), true);
-            // fly up
-        } else if ( y > 50 + COORDINATE_ALLOWABLE_OFFSET) {
-//            image = new Image(getClass().getResource(
-//                    "/images/instructions/down.png").toString(), true);
-            // fly down
-        } else if ( area < 100 - AREA_ALLOWABLE_OFFSET) {
-//            image = new Image(getClass().getResource(
-//                    "/images/instructions/forward.png").toString(), true);
-            // fly forward
-        } else if ( area < AREA_ALLOWABLE_OFFSET) {
-//            image = new Image(getClass().getResource(
-//                    "/images/instructions/around.png").toString(), true);
-            // look around
-        }
+	public void findAutonomousInstruction(double x, double y, double area) {
+		Image image = defaultImg;
+		
+		if (x < 50 - COORDINATE_ALLOWABLE_OFFSET) {
+			// rotate left
+			image = leftImg;
+		} else if (x > 50 + COORDINATE_ALLOWABLE_OFFSET) {
+			// rotate right
+			image = rightImg;
+		} else if (y < 50 - COORDINATE_ALLOWABLE_OFFSET) {
+			// fly up
+			image = upImg;
+		} else if (y > 50 + COORDINATE_ALLOWABLE_OFFSET) {
+			// fly down
+			image = downImg;
+		} else if (area < 100 - AREA_ALLOWABLE_OFFSET) {
+			// fly forward
+			image = forwardImg;
+		}
+		instructionsImg.setImage(image);
+	}
 
-//        imageView.setImage(image);
-    }
-    
     @FXML
     public void setRedHsvRange(ActionEvent event) {
         setHsvRange(170 - SENSITIVITY, 70, 50,
@@ -411,4 +422,5 @@ public class Controller {
         valueStartSlider.setValue(valueStart);
         valueStopSlider.setValue(valueStop);
     }
+    
 }

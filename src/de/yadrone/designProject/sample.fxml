@@ -39,7 +39,7 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                      <Button fx:id="startCameraButton" alignment="center" disable="false" onAction="#startCamera" prefWidth="155.0" style="-fx-background-radius: 0;" text="Start camera" />
+                      <Button fx:id="startCameraButton" alignment="center" disable="true" onAction="#startCamera" prefWidth="155.0" style="-fx-background-radius: 0;" text="Start camera" />
                </children>
                <VBox.margin>
                   <Insets top="10.0" />
@@ -250,6 +250,13 @@
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
+                           <children>
+                              <ImageView fx:id="instructionsImg" fitHeight="212.0" fitWidth="353.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../img/default.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
                         </Pane>
                      </children>
                   </VBox>
