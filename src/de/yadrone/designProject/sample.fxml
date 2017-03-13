@@ -78,7 +78,7 @@
             </Button>
             <HBox>
                <children>
-                  <Button fx:id="rotateLeftButton" disable="true" onAction="#rotateLeft" prefWidth="80.0" rotate="-10.0" style="-fx-background-radius: 0;" text="Rotate left">
+                  <Button fx:id="rotateLeftButton" disable="true" onAction="#left" prefWidth="80.0" rotate="-10.0" style="-fx-background-radius: 0;" text="Left">
                      <HBox.margin>
                         <Insets left="30.0" right="10.0" />
                      </HBox.margin>
@@ -88,7 +88,7 @@
                         <Insets right="10.0" top="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="rotateRightButton" disable="true" onAction="#rotateRight" prefWidth="80.0" rotate="10.0" style="-fx-background-radius: 0;" text="Rotate right" />
+                  <Button fx:id="rotateRightButton" disable="true" onAction="#right" prefWidth="80.0" rotate="10.0" style="-fx-background-radius: 0;" text="Right" />
                </children>
             </HBox>
             <Button fx:id="emergencyCutOffButton" disable="true" onAction="#emergencyCutOff" prefWidth="320.0" style="-fx-background-radius: 0;" text="Emergency cut-off">

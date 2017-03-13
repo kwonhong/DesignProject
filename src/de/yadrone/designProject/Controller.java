@@ -12,6 +12,8 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.videoio.VideoCapture;
@@ -28,6 +30,7 @@ import java.util.concurrent.TimeUnit;
 
 import static de.yadrone.designProject.Utility.bufferedImageToMat;
 import static de.yadrone.designProject.Utility.mat2Image;
+import static javafx.scene.input.KeyCode.*;
 
 public class Controller {
     private static final double SENSITIVITY = 15.0;
@@ -71,14 +74,14 @@ public class Controller {
 
     // TextArea to display relative position information
     @FXML private TextArea relativePositionTxtArea;
-    
+
     static Image upImg;
 	static Image downImg;
 	static Image forwardImg;
 	static Image leftImg;
 	static Image rightImg;
 	static Image defaultImg;
-	
+
     static {
 		try {
 			upImg = new Image(new File(".\\img\\up.png").toURL().toString());
@@ -90,9 +93,10 @@ public class Controller {
 		} catch (MalformedURLException e) {
 		}
     }
-    
+
     private IARDrone drone;
     private int counter = 0;
+    private boolean isControllableState = false;
 
 	public Controller() {
 	}
@@ -114,6 +118,7 @@ public class Controller {
             connectDroneButton.setDisable(true);
             startCameraButton.setDisable(false);
             takeOffButton.setDisable(false);
+            isControllableState = true;
             showBattery();
             
         } catch (Exception exc) {
@@ -175,6 +180,14 @@ public class Controller {
     @FXML
     private void back() {
     	drone.backward();
+    }
+
+    @FXML void left() {
+	    drone.goLeft();
+    }
+
+    @FXML void right() {
+        drone.goRight();
     }
     
     @FXML
@@ -378,7 +391,7 @@ public class Controller {
 
 	public void findAutonomousInstruction(double x, double y, double area) {
 		Image image = defaultImg;
-		
+
 		if (x < 50 - COORDINATE_ALLOWABLE_OFFSET) {
 			// rotate left
 			image = leftImg;
@@ -422,5 +435,40 @@ public class Controller {
         valueStartSlider.setValue(valueStart);
         valueStopSlider.setValue(valueStop);
     }
-    
+
+    public void handleKeyEvents(KeyEvent event) {
+        if (!isControllableState)
+            return;
+
+        switch (event.getCode()) {
+            case RIGHT:
+                right();
+                break;
+
+            case LEFT:
+                left();
+                break;
+
+            case UP:
+                increaseAltitude();
+                break;
+
+            case DOWN:
+                decreaseAltitude();
+                break;
+
+            case SPACE:
+                forward();
+                break;
+
+            case ESCAPE:
+                takeOff();
+                break;
+
+            default:
+                System.out.println(event.getCode());
+        }
+
+    }
+
 }

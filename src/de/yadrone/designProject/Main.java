@@ -1,8 +1,11 @@
 package de.yadrone.designProject;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -13,10 +16,23 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        BorderPane root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+
+
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("sample.fxml"));
+        fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
+
+        BorderPane root = fxmlLoader.load();
         root.setStyle("-fx-background-color: whitesmoke;");
+        final Controller controller = fxmlLoader.getController();
 
         Scene scene = new Scene(root, 1201, 733);
+        scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                controller.handleKeyEvents(event);
+            }
+        });
         primaryStage.setTitle("Object Recognition");
         primaryStage.setScene(scene);
         primaryStage.show();
