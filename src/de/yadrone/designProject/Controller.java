@@ -2,6 +2,7 @@ package de.yadrone.designProject;
 
 import de.yadrone.base.ARDrone;
 import de.yadrone.base.IARDrone;
+import de.yadrone.base.navdata.BatteryListener;
 import de.yadrone.base.video.ImageListener;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -9,11 +10,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.videoio.VideoCapture;
 
+import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +50,8 @@ public class Controller {
     
     @FXML private Button redButton;
     @FXML private Button greenButton;
+
+    private ImageView imageView;
     
     // Sliders to set HSV min/max values.
     @FXML private Slider hueStartSlider;
@@ -88,6 +93,7 @@ public class Controller {
             connectDroneButton.setDisable(true);
             startCameraButton.setDisable(false);
             takeOffButton.setDisable(false);
+            showBattery();
             
         } catch (Exception exc) {
             System.err.println("Failed to connect to the drone...");
@@ -97,7 +103,8 @@ public class Controller {
 
     @FXML
     private void startCamera() {
-        startDroneVideoStream();
+//        startDroneVideoStream();
+        startComputerVideoStream();
         startCameraButton.setDisable(true);
     }
 
@@ -317,6 +324,7 @@ public class Controller {
                 double xPercentage = (center.x /frameWidth) * 100;
                 double yPercentage = (1 - (center.y /frameHeight)) * 100;
                 double areaPercentage = (contourArea / (frameWidth * frameHeight)) * 100;
+                findAutonomousInstruction(xPercentage, yPercentage, areaPercentage);
 
                 final String appendingData =
                         String.format("Contour Id: %1$d, " +
@@ -328,6 +336,55 @@ public class Controller {
                 Platform.runLater(() -> relativePositionTxtArea.appendText(appendingData));
             }
         }
+    }
+
+    private void showBattery() {
+        drone.getNavDataManager().addBatteryListener(new BatteryListener() {
+            @Override
+            public void batteryLevelChanged(int percentage) {
+
+            }
+
+            @Override
+            public void voltageChanged(int vbat_raw) {
+
+            }
+        });
+    }
+
+    public static final int COORDINATE_ALLOWABLE_OFFSET = 7;
+    public static final int AREA_ALLOWABLE_OFFSET = 10;
+    public void findAutonomousInstruction(double x, double y, double area) {
+//        Image image = new Image(getClass().getResource(
+//                "/images/instructions/default.png").toString(), true);
+
+        if ( x < 50 - COORDINATE_ALLOWABLE_OFFSET) {
+//            image = new Image(getClass().getResource(
+//                    "/images/instructions/left.png").toString(), true);
+            // rotate left
+        } else if ( x > 50 + COORDINATE_ALLOWABLE_OFFSET) {
+//            image = new Image(getClass().getResource(
+//                    "/images/instructions/right.png").toString(), true);
+            // rotate right
+        } else if ( y < 50 - COORDINATE_ALLOWABLE_OFFSET) {
+//            image = new Image(getClass().getResource(
+//                    "/images/instructions/up.png").toString(), true);
+            // fly up
+        } else if ( y > 50 + COORDINATE_ALLOWABLE_OFFSET) {
+//            image = new Image(getClass().getResource(
+//                    "/images/instructions/down.png").toString(), true);
+            // fly down
+        } else if ( area < 100 - AREA_ALLOWABLE_OFFSET) {
+//            image = new Image(getClass().getResource(
+//                    "/images/instructions/forward.png").toString(), true);
+            // fly forward
+        } else if ( area < AREA_ALLOWABLE_OFFSET) {
+//            image = new Image(getClass().getResource(
+//                    "/images/instructions/around.png").toString(), true);
+            // look around
+        }
+
+//        imageView.setImage(image);
     }
     
     @FXML
