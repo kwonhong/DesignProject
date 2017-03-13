@@ -285,6 +285,9 @@ public class Controller {
     }
 
     private void findRelativePosition(Mat morphFrame) {
+        double frameWidth = morphFrame.size().width;
+        double frameHeight = morphFrame.size().height;
+
         // 6. Finding the coordinate of the detected object.
         List<MatOfPoint> contours = new ArrayList<>();
         Mat hierarchy = new Mat();
@@ -310,11 +313,18 @@ public class Controller {
                 Imgproc.minEnclosingCircle(
                         new MatOfPoint2f(contours.get(idx).toArray()), center, radius);
 
+                // Calculating the percentage
+                double xPercentage = (center.x /frameWidth) * 100;
+                double yPercentage = (1 - (center.y /frameHeight)) * 100;
+                double areaPercentage = (contourArea / (frameWidth * frameHeight)) * 100;
+
                 final String appendingData =
                         String.format("Contour Id: %1$d, " +
                                         "Area: %2$.1f, " +
                                         "Center Point: (x: %3$.1f, y: %4$.1f)\n",
-                                idx, contourArea, center.x, center.y);
+                                idx, areaPercentage, xPercentage, yPercentage);
+
+
                 Platform.runLater(() -> relativePositionTxtArea.appendText(appendingData));
             }
         }
