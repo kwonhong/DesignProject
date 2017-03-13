@@ -30,6 +30,7 @@ public class Controller {
     private static final float MIN_CONTOUR_AREA = 2000;
     private static final int DILATION_SIZE = 16;
     private static final int EROSION_SIZE = 6;
+    private static final int FRAME_FREQUENCY = 5;
     
     // Buttons
     @FXML private Button connectDroneButton;
@@ -65,6 +66,7 @@ public class Controller {
     @FXML private TextArea relativePositionTxtArea;
 
     private IARDrone drone;
+    private int counter = 0;
 
 	public Controller() {
 	}
@@ -183,7 +185,13 @@ public class Controller {
         drone.getVideoManager().addImageListener(new ImageListener() {
             @Override
             public void imageUpdated(BufferedImage image) {
-                updateFrames(bufferedImageToMat(image));
+            	if (counter == FRAME_FREQUENCY) {
+            		updateFrames(bufferedImageToMat(image));	
+            		counter = 0;
+            	} else {
+            		counter++;
+            	}
+                
             }
         });
     }
@@ -311,7 +319,7 @@ public class Controller {
             }
         }
     }
-
+    
     @FXML
     public void setRedHsvRange(ActionEvent event) {
         setHsvRange(170 - SENSITIVITY, 70, 50,
