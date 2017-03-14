@@ -30,9 +30,18 @@ public class Main extends Application {
         scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
-                controller.handleKeyEvents(event);
+                controller.handleKeyPressedEvents(event);
             }
         });
+
+        scene.addEventFilter(KeyEvent.KEY_RELEASED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                controller.handleKeyReleaseEvents(event);
+            }
+        });
+
+
         primaryStage.setTitle("Object Recognition");
         primaryStage.setScene(scene);
         primaryStage.show();

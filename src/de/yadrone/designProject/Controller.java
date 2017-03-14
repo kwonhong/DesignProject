@@ -166,99 +166,99 @@ public class Controller {
 
     @FXML
     private void increaseAltitude() {
-        try {
+//        try {
             drone.up();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
     }
     
     @FXML
     private void decreaseAltitude() {
-        try {
+//        try {
             drone.down();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
     
     @FXML
     private void forward() {
-        try {
+//        try {
             drone.forward();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
     
     private void backward() {
-        try {
+//        try {
             drone.backward();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
     
     @FXML
     private void back() {
-        try {
+//        try {
             drone.backward();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @FXML void left() {
-        try {
+//        try {
             drone.goLeft();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @FXML void right() {
-        try {
+//        try {
             drone.goRight();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
     
     @FXML
     private void rotateLeft() {
-        try {
+//        try {
             drone.spinLeft();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
     
     @FXML
     private void rotateRight() {
-        try {
+//        try {
             drone.spinRight();
-            Thread.sleep(DELAY);
-            drone.hover();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//            Thread.sleep(DELAY);
+//            drone.hover();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
     
     @FXML
@@ -497,7 +497,7 @@ public class Controller {
         valueStopSlider.setValue(valueStop);
     }
 
-    public void handleKeyEvents(KeyEvent event) {
+    public void handleKeyPressedEvents(KeyEvent event) {
         if (!isControllableState)
             return;
 
@@ -544,4 +544,7 @@ public class Controller {
 
     }
 
+    public void handleKeyReleaseEvents(KeyEvent event) {
+        drone.hover();
+    }
 }
