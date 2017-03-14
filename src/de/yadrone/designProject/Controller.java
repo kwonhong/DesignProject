@@ -162,17 +162,8 @@ public class Controller {
         emergencyCutOffButton.setDisable(true);
     }
 
-    public static final int DELAY = 300;
+    public static final int DELAY = 100;
 
-    private handleCommand() {
-        //sleep 5 seconds
-        try {
-            Thread.sleep(DELAY);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-    
     @FXML
     private void increaseAltitude() {
         try {
@@ -200,6 +191,16 @@ public class Controller {
     private void forward() {
         try {
             drone.forward();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private void backward() {
+        try {
+            drone.backward();
             Thread.sleep(DELAY);
             drone.hover();
         } catch (InterruptedException e) {
@@ -460,10 +461,10 @@ public class Controller {
 			image = rightImg;
 		} else if (y < 50 - COORDINATE_ALLOWABLE_OFFSET) {
 			// fly up
-			image = upImg;
+			image = downImg;
 		} else if (y > 50 + COORDINATE_ALLOWABLE_OFFSET) {
 			// fly down
-			image = downImg;
+			image = upImg;
 		} else if (area < 100 - AREA_ALLOWABLE_OFFSET) {
 			// fly forward
 			image = forwardImg;
@@ -510,19 +511,31 @@ public class Controller {
                 break;
 
             case UP:
-                increaseAltitude();
+            	forward();
                 break;
 
             case DOWN:
-                decreaseAltitude();
+            	backward();
                 break;
 
             case W:
-                forward();
+                increaseAltitude();
                 break;
+                
+            case S:
+            	decreaseAltitude();
+            	break;
+                
+            case Q:
+            	takeOff();
+            	break;
+            	
+            case R:
+            	land();
+            	break;
 
             case ESCAPE:
-                takeOff();
+                emergencyCutOff();
                 break;
 
             default:
