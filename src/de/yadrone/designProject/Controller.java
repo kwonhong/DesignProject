@@ -161,43 +161,103 @@ public class Controller {
         rotateRightButton.setDisable(true);
         emergencyCutOffButton.setDisable(true);
     }
+
+    public static final int DELAY = 300;
+
+    private handleCommand() {
+        //sleep 5 seconds
+        try {
+            Thread.sleep(DELAY);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     
     @FXML
     private void increaseAltitude() {
-    	drone.up();
+        try {
+            drone.up();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
     
     @FXML
     private void decreaseAltitude() {
-    	drone.down();
+        try {
+            drone.down();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     
     @FXML
     private void forward() {
-    	drone.forward();
+        try {
+            drone.forward();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     
     @FXML
     private void back() {
-    	drone.backward();
+        try {
+            drone.backward();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML void left() {
-	    drone.goLeft();
+        try {
+            drone.goLeft();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML void right() {
-        drone.goRight();
+        try {
+            drone.goRight();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     
     @FXML
     private void rotateLeft() {
-    	drone.spinLeft();
+        try {
+            drone.spinLeft();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     
     @FXML
     private void rotateRight() {
-    	drone.spinRight();
+        try {
+            drone.spinRight();
+            Thread.sleep(DELAY);
+            drone.hover();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     
     @FXML
@@ -457,7 +517,7 @@ public class Controller {
                 decreaseAltitude();
                 break;
 
-            case SPACE:
+            case W:
                 forward();
                 break;
 
